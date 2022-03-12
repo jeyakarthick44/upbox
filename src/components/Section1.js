@@ -5,7 +5,7 @@ import Main from "./Main";
 
 function Section1() {
   return (
-    <div className="App">
+    <div className="section1">
       <Background />
       <Navbar />
       <Main />

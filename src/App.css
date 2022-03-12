@@ -21,8 +21,8 @@
   }
 }
 
-.App {
-  height: 625px;
+.section1 {
+  height: 100vh;
   width: 100%;
   background: #f5f8ff;
 }
@@ -51,7 +51,7 @@
 .hero-left {
   padding-top: 130px;
   width: 45%;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .hero-right {
   width: 50%;
@@ -60,15 +60,15 @@
 
 .hero-right img {
   position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 143px;
-  left: 50%;
+  width: 55%;
+  height: 30%;
+  top: 193px;
+  left: 45%;
 }
 
 @media only screen and (max-width: 767px) {
-  .App {
-    height: 580px;
+  .section1 {
+    height: 100vh;
     width: 100%;
   }
   .hero-left {
@@ -78,10 +78,10 @@
   }
   .hero-right img {
     position: absolute;
-    width: 70%;
-    height: 40%;
-    top: 210px;
-    left: 30%;
+    width: 65%;
+    height: 25%;
+    top: 265px;
+    left: 35%;
   }
   .hero-left-para {
     padding-right: 40%;
@@ -90,8 +90,8 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .App {
-    height: 800px;
+  .section1 {
+    height: 150vh;
   }
   .hero-left {
     padding: 20px 20px 0px 20px;
@@ -100,8 +100,8 @@
   .hero-right img {
     position: absolute;
     width: 100%;
-    height: 30%;
-    top: 720px;
+    height: 25%;
+    top: 780px;
     left: -5%;
     transform: scale(1.7);
   }
@@ -118,11 +118,200 @@
 }
 
 .plan-heading {
+  position: absolute;
+  left: 40%;
   font-family: "DM Serif Text";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 48px;
   line-height: 56px;
   text-align: center;
   color: #000000;
+  margin-top: 40px;
+}
+.plan-heading-img {
+  position: relative;
+  width: 300px;
+  left: 40%;
+  top: 95px;
+}
+
+.box1 {
+  width: 50%;
+  height: 282px;
+  border: 4px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-image: url(./images/vector.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 160px;
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+.box-head {
+  left: calc(50% - 131px / 2 - 5px);
+  top: 50px;
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #000000;
+  padding-top: 45px;
+}
+.box-para {
+  left: calc(50% - 173px / 2);
+  top: 100px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  color: #000000;
+  padding-top: 18px;
+}
+.plan-button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-family: "DM Sans";
+  left: calc(50% - 150px / 2);
+  top: 0px;
+  background: #ef8094;
+  border: 4px solid #ef8094;
+  box-sizing: border-box;
+  border-radius: 300px;
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.box2 {
+  width: 50%;
+  height: 282px;
+  border: 4px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-image: url(./images/Vector1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 160px;
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+.plan-last-para {
+  left: calc(50% - 675px / 2 + 0.5px);
+  top: 457px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .box1 {
+    width: 100%;
+    height: 160px;
+    margin: 140px 30px 0px 30px;
+    background-size: 100%;
+  }
+  .box2 {
+    width: 100%;
+    height: 160px;
+    margin: 140px 30px 0px 0px;
+    background-size: 100%;
+  }
+  .box-head {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .box-para {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .plan-button {
+    margin-top: 0%;
+    height: 30px;
+    font-size: 12px;
+  }
+  .plan-last-para {
+    font-size: 14px;
+  }
+  .plan-heading {
+    left: 30%;
+    margin-top: 10px;
+  }
+  .plan-heading-img {
+    left: 30%;
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .section2 {
+    margin-top: 500px;
+  }
+  .box1 {
+    width: 80%;
+    height: 160px;
+    margin: 120px 0px 0px 40px;
+    background-size: 100%;
+  }
+  .box2 {
+    width: 80%;
+    height: 160px;
+    margin: 30px 30px 0px 40px;
+    background-size: 100%;
+  }
+  .box-head {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .box-para {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .plan-button {
+    margin-top: 0%;
+    height: 30px;
+    font-size: 12px;
+  }
+  .plan-last-para {
+    font-size: 14px;
+  }
+  .plan-heading {
+    left: 25%;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .plan-heading-img {
+    left: 25%;
+    top: 60px;
+    width: 180px;
+  }
+}
+
+/* ---------------------- Section3 -------------------- */
+
+.section3 {
+  width: 100%;
+  height: 200vh;
 }
