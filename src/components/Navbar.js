@@ -16,8 +16,9 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import "../App.css";
-import Logo from "../images/Logo.png";
 import Hamburger from "../images/Hamburger.png";
+import Logo from "../images/Logo.png";
+
 import {
   HamburgerIcon,
   CloseIcon,
@@ -47,13 +48,18 @@ export default function WithSubnavigation() {
           display={{ base: "flex", md: "none" }}
         >
           <IconButton
-            style={{ position: "relative", left: "280%" }}
+            className="icon"
+            style={{ position: "relative", left: "270%" }}
             onClick={onToggle}
             icon={
               isOpen ? (
                 <CloseIcon w={3} h={3} />
               ) : (
-                <img src={Hamburger} alt="" />
+                <img
+                  src={Hamburger}
+                  alt=""
+                  style={{ width: "26px", height: "26px" }}
+                />
               )
             }
             variant={"ghost"}
@@ -61,7 +67,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <img src={Logo} alt="" style={{ width: "56px", height: "56px" }} />
+          <img src={Logo} alt="" style={{ width: "45px", height: "45px" }} />
           <Text
             style={{
               fontFamily: "DM Sans",
@@ -71,7 +77,7 @@ export default function WithSubnavigation() {
               lineHeight: "36px",
               letterSpacing: "0.28em",
               color: "000000",
-              marginTop: "10px",
+              marginTop: "6px",
               marginLeft: "20px",
             }}
             className="logo"
@@ -94,17 +100,30 @@ export default function WithSubnavigation() {
           spacing={6}
         >
           <Button
+            style={{
+              borderRadius: "20px",
+              background: "none",
+              border: "1px solid #4A4A4A",
+              fontFamily: "DM Sans",
+              fontStyle: "normal",
+              fontWeight: " 500",
+              fontSize: "14px",
+              lineHeight: "18px",
+              letterSpacing: "0.12em",
+              color: "#000000",
+            }}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
             fontWeight={600}
+            pl={6}
+            pr={6}
             color={"black"}
             href={"#"}
             _hover={{
               bg: "blue",
-              color: "white",
             }}
           >
-            Login in
+            LOG IN &#62;
           </Button>
         </Stack>
       </Flex>
@@ -122,13 +141,22 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={2} style={{ marginTop: "15px" }}>
+    <Stack direction={"row"} spacing={2} style={{ marginTop: "10px" }}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
                 p={2}
+                style={{
+                  fontFamily: "DM Sans",
+                  fontStyle: "normal",
+                  fontWeight: " 500",
+                  fontSize: "14px",
+                  lineHeight: "18px",
+                  letterSpacing: "0.16em",
+                  color: "#000000",
+                }}
                 href={navItem.href ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}

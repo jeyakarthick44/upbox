@@ -1,1 +1,128 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+
+@media only screen and (max-width: 460px) {
+  .icon {
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .icon {
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .icon {
+    margin-left: 70%;
+  }
+}
+@media only screen and (max-width: 315px) {
+  .icon {
+    margin-left: 100%;
+  }
+}
+
+.App {
+  height: 625px;
+  width: 100%;
+  background: #f5f8ff;
+}
+
+.hero-left-heading {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 350%;
+  line-height: 56px;
+  color: #000000;
+}
+
+.hero-left-para {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding-right: 100px;
+  margin-top: 10px;
+}
+
+.hero-left {
+  padding-top: 130px;
+  width: 45%;
+  margin-left: 50px;
+}
+.hero-right {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-right img {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 143px;
+  left: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .App {
+    height: 580px;
+    width: 100%;
+  }
+  .hero-left {
+    padding-top: 20px;
+    width: 80%;
+    margin-left: 10px;
+  }
+  .hero-right img {
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    top: 210px;
+    left: 30%;
+  }
+  .hero-left-para {
+    padding-right: 40%;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .App {
+    height: 800px;
+  }
+  .hero-left {
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+  }
+  .hero-right img {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 720px;
+    left: -5%;
+    transform: scale(1.7);
+  }
+  .hero-left-para {
+    padding-right: 10%;
+    margin-top: 10px;
+  }
+}
+
+/* ---------------------------------section2----------------------- */
+.section2 {
+  width: 100%;
+  height: 100vh;
+}
+
+.plan-heading {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+}
